@@ -536,7 +536,7 @@ body {
     .nav__link--menu {
         position: fixed;
         background-color: rgba(0, 0, 0, 0.5); /* Cambia el color de fondo a uno semitransparente */
-        backdrop-filter: blur(18px); /* Ajusta el valor para controlar el grado de desenfoque */
+        backdrop-filter: blur(28px); /* Ajusta el valor para controlar el grado de desenfoque */
         top: 0;
         left: 0;
         height: 100%;
