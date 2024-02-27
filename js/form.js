@@ -15,6 +15,15 @@ async function handleSubmit(event) {
     })
     if (response.ok){
         this.reset()
-        alert('Gracias por contactarnos, te escribiremos pronto')
+        Swal.fire({
+            title: "Gracias por contactarnos, te escribiremos pronto",
+            showClass: {
+                popup: "animate__animated animate__fadeIn", // Animación de entrada
+            },
+            hideClass: {
+                popup: "animate__animated animate__fadeOut", // Animación de salida
+            },
+            confirmButtonColor: "#fd0000" // Color del botón de confirmación
+        });         
     }
 }
