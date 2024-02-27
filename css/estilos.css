@@ -109,6 +109,7 @@ body {
 
 .hero__paragraph {
     margin-bottom: 20px;
+    font-size: x-large;
 }
 
 .cta {
@@ -262,7 +263,12 @@ body {
     background-color: var(--bg-cta);
     font-weight: 600;
     color: var(--color-cta);
-    box-shadow: 0 0 1px rgba(0, 0, 0, .5);
+    transition: transform 0.3s ease;
+}
+
+.price__cta:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Testimony */
