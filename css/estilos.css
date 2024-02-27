@@ -284,6 +284,7 @@ body {
 }
 
 .price__items{
+    width: 100%;
     margin-top: 35px;
     display: grid;
     gap: 1em;
