@@ -533,9 +533,10 @@ body {
         display: block;
     }
 
-    .nav__link--menu{
+    .nav__link--menu {
         position: fixed;
-        background-color: #000;
+        background-color: rgba(0, 0, 0, 0.5); /* Cambia el color de fondo a uno semitransparente */
+        backdrop-filter: blur(18px); /* Ajusta el valor para controlar el grado de desenfoque */
         top: 0;
         left: 0;
         height: 100%;
@@ -549,6 +550,15 @@ body {
         pointer-events: none;
         transition: .7s opacity;
     }
+    
+    .nav__link--menu a {
+        color: white; /* Cambia el color del texto si es necesario */
+        text-decoration: none; /* Cambia el decorado de texto si es necesario */
+        font-size: 18px; /* Cambia el tamaño de fuente si es necesario */
+        backdrop-filter: blur(5px); /* Aplica el filtro de desenfoque a los enlaces */
+    }
+    
+    
 
     .nav__link--show{
         --show: block;
