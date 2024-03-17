@@ -141,6 +141,13 @@ body {
     font-size: 3rem;
 }
 
+.hero__container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .hero__paragraph {
     margin-bottom: 20px;
     font-size: x-large;
@@ -720,3 +727,23 @@ body {
         */
     }
 }
+
+
+
+  /* Estilo para el título */
+  .floating-title {
+    font-size: 5em;
+    font-weight: bold;
+    color: #fff; /* Color rojo coral */
+    animation: float 1s ease-in-out infinite alternate; /* Animación de flotación */
+  }
+
+  /* Animación para flotar */
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
